@@ -1154,3 +1154,5 @@ layer_0/tile_data = PackedInt32Array(1572839, 1310720, 0, 1638375, 1310720, 1, 1
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_qih7e")]
 position = Vector2(128, 632)
+
+[connection signal="ready" from="TileMap" to="CharacterBody2D" method="_on_tile_map_ready"]
